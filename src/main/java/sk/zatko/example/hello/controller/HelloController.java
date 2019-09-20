@@ -10,7 +10,7 @@ public class HelloController {
     @Autowired
     private HelloService helloService;
 
-    @GetMapping("/")
+    @GetMapping(value = "/")
     public String sayHello() {
         return helloService.sayHello();
     }
